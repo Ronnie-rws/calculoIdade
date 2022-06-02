@@ -8,11 +8,19 @@
         <script>
           
           var anoNascimento = prompt("Digite seu ano de nascimento: ");
+          
+          while(anoNascimento >= 2022){
+            
+            alert("Por favor informe seu ano de nascimento corretamente");
+            var anoNascimento = prompt("Digite seu ano de nascimento: ");
+          }
+          
+          
           var anoAtual = prompt("Digite o ano atual: ");
 
           var idadeFinal = anoAtual - anoNascimento;
-          //console.log(idadeFinal);
-          alert('A idade final é: ' + idadeFinal);
+           alert('A idade final é: ' + idadeFinal);
+          
         </script>
       </body>
   </html>
